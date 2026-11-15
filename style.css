@@ -151,7 +151,7 @@ body:before {
     border: 0;
     text-decoration: none;
     border-radius: 50px;
-    background: linear-gradient(110deg, #00d7ef, #00a9eb);
+    background:rgb(247, 145, 21);
     color: #00131f;
     font-weight: 800;
     box-shadow: 0 0 24px #00cfff35;
@@ -221,7 +221,8 @@ h1 {
 
 h1 strong {
     font-size: 1.08em;
-    color: #00d9ff;
+    color: #fff;
+    /* color: #00d9ff; */
     font-weight: 800;
     white-space: nowrap;
     text-shadow: 0 0 8px #00dfff, 0 0 30px #00aaff8c
@@ -2047,3 +2048,4 @@ h1 strong {
         height: 42px;
     }
 }
+
