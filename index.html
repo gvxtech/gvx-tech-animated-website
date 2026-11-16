@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body >
   <div class="page-grid" aria-hidden="true"></div>
@@ -75,13 +76,62 @@
     </section>
 
     <!-- service ribbon from the reference -->
-    <section class="service-ribbon" id="services" aria-label="Core services">
-      <a class="ribbon-card" href="#service-web"><span class="ribbon-icon monitor-icon">⌘</span><span><b>Web Development</b><small>Stunning, high-performance<br>websites</small></span></a>
-      <a class="ribbon-card" href="#service-mobile"><span class="ribbon-icon phone-icon">▯</span><span><b>Mobile Apps</b><small>Engaging apps<br>for your business</small></span></a>
-      <a class="ribbon-card" href="#service-marketing"><span class="ribbon-icon growth-icon">↗</span><span><b>Digital Marketing</b><small>Be found, attract<br>and grow</small></span></a>
-      <a class="ribbon-card" href="#service-automation"><span class="ribbon-icon gear-icon">⚙</span><span><b>Business Automation</b><small>Smart solutions to<br>save time and cost</small></span></a>
-      <a class="ribbon-card ribbon-industries" href="#industries"><span class="building-icon">▥</span><span><b>Powering Businesses Across</b><small>Clinics&nbsp; | &nbsp;Restaurants &amp; Bakeries<br>Retail &amp; E-commerce&nbsp; | &nbsp;MSMEs</small></span></a>
-    </section>
+   
+<section class="service-ribbon" id="services" aria-label="Core services">
+
+    <a class="ribbon-card" href="#service-web">
+        <span class="ribbon-icon">
+            <i class="fa-solid fa-code"></i>
+        </span>
+        <span>
+            <b>Web Development</b>
+            <small>Stunning, high-performance<br>websites</small>
+        </span>
+    </a>
+
+    <a class="ribbon-card" href="#service-mobile">
+        <span class="ribbon-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+        </span>
+        <span>
+            <b>Mobile Apps</b>
+            <small>Engaging apps<br>for your business</small>
+        </span>
+    </a>
+
+    <a class="ribbon-card" href="#service-marketing">
+        <span class="ribbon-icon">
+            <i class="fa-solid fa-chart-line"></i>
+        </span>
+        <span>
+            <b>Digital Marketing</b>
+            <small>Be found, attract<br>and grow</small>
+        </span>
+    </a>
+
+    <a class="ribbon-card" href="#service-automation">
+        <span class="ribbon-icon">
+            <i class="fa-solid fa-gears"></i>
+        </span>
+        <span>
+            <b>Business Automation</b>
+            <small>Smart solutions to<br>save time and cost</small>
+        </span>
+    </a>
+
+    <a class="ribbon-card ribbon-industries" href="#industries">
+        <span class="ribbon-icon">
+            <i class="fa-solid fa-building"></i>
+        </span>
+        <span>
+            <b>Powering Businesses Across</b>
+            <small>Clinics&nbsp; | &nbsp;Restaurants &amp; Bakeries<br>
+            Retail &amp; E-commerce&nbsp; | &nbsp;MSMEs</small>
+        </span>
+    </a>
+
+</section>
+
 
     <!-- introduction -->
     <section class="intro section-wrap reveal" id="about">
@@ -97,42 +147,111 @@
     </section>
 
     <!-- detailed services -->
-    <section class="services-section section-wrap" aria-labelledby="services-title">
-      <div class="section-heading reveal">
-        <div><span class="section-tag">WHAT WE DO</span><h2 id="services-title">One partner. <em>Complete solutions.</em></h2></div>
+  <section class="services-section section-wrap" aria-labelledby="services-title">
+
+    <div class="section-heading reveal">
+        <div>
+            <span class="section-tag">WHAT WE DO</span>
+            <h2 id="services-title">One partner. <em>Complete solutions.</em></h2>
+        </div>
         <p>Everything you need to build, launch and grow in a connected world.</p>
-      </div>
-      <div class="service-grid">
+    </div>
+
+    <div class="service-grid">
+
+        <!-- 01 Website Development -->
         <article class="service-detail reveal" id="service-web">
-          <div class="service-number">01</div><div class="detail-icon">⌘</div>
-          <h3>Website Development</h3>
-          <p>Make a powerful first impression with fast, responsive websites designed around your brand and business goals.</p>
-          <div class="chips"><span>Business Websites</span><span>E-commerce</span><span>Landing Pages</span></div>
-          <a href="#contact" aria-label="Enquire about website development">↗</a>
+            <div class="service-number">01</div>
+
+            <div class="detail-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>Website Development</h3>
+            <p>Make a powerful first impression with fast, responsive websites designed around your brand and business goals.</p>
+
+            <div class="chips">
+                <span>Business Websites</span>
+                <span>E-commerce</span>
+                <span>Landing Pages</span>
+            </div>
+
+            <a href="#contact" aria-label="Enquire about website development">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </article>
+
+
+        <!-- 02 Web & Mobile Apps -->
         <article class="service-detail reveal" id="service-mobile">
-          <div class="service-number">02</div><div class="detail-icon">▯</div>
-          <h3>Web &amp; Mobile Apps</h3>
-          <p>Bring your ideas to life with intuitive applications that simplify tasks and keep your customers connected.</p>
-          <div class="chips"><span>Web Applications</span><span>Mobile Apps</span><span>Dashboards</span></div>
-          <a href="#contact" aria-label="Enquire about applications">↗</a>
+            <div class="service-number">02</div>
+
+            <div class="detail-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+
+            <h3>Web &amp; Mobile Apps</h3>
+            <p>Bring your ideas to life with intuitive applications that simplify tasks and keep your customers connected.</p>
+
+            <div class="chips">
+                <span>Web Applications</span>
+                <span>Mobile Apps</span>
+                <span>Dashboards</span>
+            </div>
+
+            <a href="#contact" aria-label="Enquire about applications">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </article>
+
+
+        <!-- 03 SEO & Digital Marketing -->
         <article class="service-detail reveal" id="service-marketing">
-          <div class="service-number">03</div><div class="detail-icon">⌁</div>
-          <h3>SEO &amp; Digital Marketing</h3>
-          <p>Reach the right audience, improve visibility and turn online attention into meaningful business enquiries.</p>
-          <div class="chips"><span>SEO</span><span>Social Media</span><span>Campaigns</span></div>
-          <a href="#contact" aria-label="Enquire about digital marketing">↗</a>
+            <div class="service-number">03</div>
+
+            <div class="detail-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>SEO &amp; Digital Marketing</h3>
+            <p>Reach the right audience, improve visibility and turn online attention into meaningful business enquiries.</p>
+
+            <div class="chips">
+                <span>SEO</span>
+                <span>Social Media</span>
+                <span>Campaigns</span>
+            </div>
+
+            <a href="#contact" aria-label="Enquire about digital marketing">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </article>
+
+
+        <!-- 04 Business Automation -->
         <article class="service-detail reveal" id="service-automation">
-          <div class="service-number">04</div><div class="detail-icon">⚙</div>
-          <h3>Business Automation</h3>
-          <p>Reduce repetitive work and connect your processes with smart, reliable digital workflows.</p>
-          <div class="chips"><span>Workflow Tools</span><span>Integrations</span><span>Management Systems</span></div>
-          <a href="#contact" aria-label="Enquire about business automation">↗</a>
+            <div class="service-number">04</div>
+
+            <div class="detail-icon">
+                <i class="fa-solid fa-gears"></i>
+            </div>
+
+            <h3>Business Automation</h3>
+            <p>Reduce repetitive work and connect your processes with smart, reliable digital workflows.</p>
+
+            <div class="chips">
+                <span>Workflow Tools</span>
+                <span>Integrations</span>
+                <span>Management Systems</span>
+            </div>
+
+            <a href="#contact" aria-label="Enquire about business automation">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </article>
-      </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- industries -->
     <section class="industries-section" id="industries">
@@ -141,12 +260,51 @@
           <div><span class="section-tag">INDUSTRIES WE EMPOWER</span><h2>Technology for <em>every ambition.</em></h2></div>
           <p>Flexible digital solutions shaped around the needs of your industry.</p>
         </div>
-        <div class="industry-grid">
-          <article class="industry-card reveal"><span class="industry-symbol">✚</span><h3>Clinics &amp; Healthcare</h3><p>Patient-friendly websites, appointment workflows and clinic management solutions.</p><span class="industry-index">01</span></article>
-          <article class="industry-card reveal"><span class="industry-symbol">✦</span><h3>Restaurants &amp; Bakeries</h3><p>Digital menus, online ordering experiences and stronger local visibility.</p><span class="industry-index">02</span></article>
-          <article class="industry-card reveal"><span class="industry-symbol">◇</span><h3>Retail &amp; E-commerce</h3><p>Online storefronts and connected experiences that help customers shop with ease.</p><span class="industry-index">03</span></article>
-          <article class="industry-card reveal"><span class="industry-symbol">▦</span><h3>MSMEs &amp; Enterprises</h3><p>Professional digital presence, custom tools and streamlined business processes.</p><span class="industry-index">04</span></article>
-        </div>
+       
+<div class="industry-grid">
+
+    <!-- 01 Clinics & Healthcare -->
+    <article class="industry-card reveal">
+        <span class="industry-symbol">
+            <i class="fa-solid fa-hospital"></i>
+        </span>
+        <h3>Clinics &amp; Healthcare</h3>
+        <p>Patient-friendly websites, appointment workflows and clinic management solutions.</p>
+        <span class="industry-index">01</span>
+    </article>
+
+    <!-- 02 Restaurants & Bakeries -->
+    <article class="industry-card reveal">
+        <span class="industry-symbol">
+            <i class="fa-solid fa-utensils"></i>
+        </span>
+        <h3>Restaurants &amp; Bakeries</h3>
+        <p>Digital menus, online ordering experiences and stronger local visibility.</p>
+        <span class="industry-index">02</span>
+    </article>
+
+    <!-- 03 Retail & E-commerce -->
+    <article class="industry-card reveal">
+        <span class="industry-symbol">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </span>
+        <h3>Retail &amp; E-commerce</h3>
+        <p>Online storefronts and connected experiences that help customers shop with ease.</p>
+        <span class="industry-index">03</span>
+    </article>
+
+    <!-- 04 MSMEs & Enterprises -->
+    <article class="industry-card reveal">
+        <span class="industry-symbol">
+            <i class="fa-solid fa-building"></i>
+        </span>
+        <h3>MSMEs &amp; Enterprises</h3>
+        <p>Professional digital presence, custom tools and streamlined business processes.</p>
+        <span class="industry-index">04</span>
+    </article>
+
+</div>
+
       </div>
     </section>
 

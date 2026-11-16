@@ -717,7 +717,7 @@ h1 strong {
      position: relative;
     isolation: isolate;
     overflow: visible;
-    border: 1px solid #008DFF;
+    border: 2px solid #008DFF;
     border-radius: 17px;
     background: linear-gradient(145deg, #061B3A, #020D24);
     box-shadow: 0 0 8px rgba(0, 141, 255, 0.25);
@@ -761,9 +761,9 @@ h1 strong {
     width: 53px;
     height: 53px;
     border-radius: 14px;
-    border: 1px solid #00cde8;
+    border: 2px solid #008dff;
     background: #032c40;
-    color: #00e4fa;
+    color: #fff;
     display: grid;
     place-items: center;
     font-size: 29px;
@@ -795,7 +795,7 @@ h1 strong {
 .chips span {
     font-size: 9px;
     color: #8bcbd8;
-    border: 1px solid #1c586d;
+    border: 1px solid #008DFF;
     border-radius: 30px;
     padding: 6px 8px
 }
@@ -804,9 +804,9 @@ h1 strong {
     position: absolute;
     right: 20px;
     bottom: 19px;
-    width: 29px;
-    height: 29px;
-    border: 1px solid #00d5ed;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #008dff;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -816,7 +816,7 @@ h1 strong {
 }
 
 .service-detail>a:hover {
-    background: #00d5ed;
+    background: #0b8dff;
     color: #00131f
 }
 
@@ -836,9 +836,9 @@ h1 strong {
     padding: 25px 22px;
     min-height: 220px;
     position: relative;
-    border: 1px solid #17475b;
+    border: 1px solid #008DFF;
     border-radius: 16px;
-    background: #061c2bd9;
+    background: linear-gradient(145deg, #061B3A, #020D24);
     transition: .25s
 }
 
@@ -2058,3 +2058,78 @@ h1 strong {
     }
 }
 
+.ribbon-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.ribbon-card:hover .ribbon-icon {
+    color: #00D9F7;
+    filter: drop-shadow(0 0 8px #00D9F7);
+    transform: translateY(-3px);
+}
+
+/* Service Detail Icons */
+.detail-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #008DFF;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(0, 217, 247, 0.18),
+        rgba(0, 80, 180, 0.12)
+    );
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    box-shadow:
+        0 0 12px rgba(0, 217, 247, 0.25),
+        inset 0 0 12px rgba(0, 217, 247, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+/* Icon Hover */
+.service-detail:hover .detail-icon {
+    color: #00D9F7;
+
+    box-shadow:
+        0 0 15px rgba(0, 217, 247, 0.5),
+        0 0 30px rgba(0, 217, 247, 0.2);
+
+    transform: translateY(-4px);
+}
+
+/* Arrow Icon */
+.service-detail > a i {
+    font-size: 14px;
+}
+
+.industry-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    font-size: 25px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.industry-card:hover .industry-symbol {
+    color: #008DFF;
+    filter: drop-shadow(0 0 1px #008DFF);
+    transform: translateY(-4px);
+}
