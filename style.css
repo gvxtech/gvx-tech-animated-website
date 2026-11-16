@@ -714,29 +714,38 @@ h1 strong {
 .service-detail {
     min-height: 315px;
     padding: 25px 22px 22px;
-    border: 1px solid #17465a;
+     position: relative;
+    isolation: isolate;
+    overflow: visible;
+    border: 1px solid #008DFF;
     border-radius: 17px;
-    background: linear-gradient(145deg, #082235bd, #04121fe8);
-    position: relative;
-    overflow: hidden;
-    transition: transform .3s, border-color .3s, box-shadow .3s
+    background: linear-gradient(145deg, #061B3A, #020D24);
+    box-shadow: 0 0 8px rgba(0, 141, 255, 0.25);
 }
 
 .service-detail:before {
     content: "";
     position: absolute;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    right: -90px;
-    top: -95px;
-    background: #00cfff18;
-    filter: blur(5px)
+    top: -25px;
+    left: -25px;
+    width: 120px;
+    height: 120px;
+    /* background: radial-gradient(
+        circle,
+        rgba(0, 217, 247, 0.8),
+        rgba(0, 141, 255, 0.3) 45%,
+        transparent 75%
+    ); */
+    filter: blur(18px);
+    z-index: -1;
+    pointer-events: none;
+    /* background: #131d54; */
+
 }
 
 .service-detail:hover {
     transform: translateY(-7px);
-    border-color: #00cbe7;
+    border-color: #008DFF;
     box-shadow: 0 15px 40px #00bfff13
 }
 
