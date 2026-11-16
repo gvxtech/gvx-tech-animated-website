@@ -151,7 +151,7 @@ body:before {
     border: 0;
     text-decoration: none;
     border-radius: 50px;
-    background:rgb(247, 145, 21);
+    background:#FDC302;
     color: #00131f;
     font-weight: 800;
     box-shadow: 0 0 24px #00cfff35;
@@ -225,7 +225,7 @@ h1 strong {
     /* color: #00d9ff; */
     font-weight: 800;
     white-space: nowrap;
-    text-shadow: 0 0 8px #00dfff, 0 0 30px #00aaff8c
+    /* text-shadow: 0 0 8px #00dfff, 0 0 30px #00aaff8c */
 }
 
 .hero-lead {
@@ -813,7 +813,7 @@ h1 strong {
 
 .industries-section {
     padding: 100px 0 110px;
-    background: linear-gradient(110deg, #041725e8, #03111ddf);
+    background: black;
     border-block: 1px solid #123e52
 }
 
@@ -2036,7 +2036,7 @@ h1 strong {
 }
 
 .logo img {
-    height: 55px;
+    height: 65px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -2045,7 +2045,7 @@ h1 strong {
 /* Mobile View */
 @media (max-width: 768px) {
     .logo img {
-        height: 42px;
+        height: 52px;
     }
 }
 
