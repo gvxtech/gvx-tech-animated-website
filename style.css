@@ -246,8 +246,8 @@ h1 {
 }
 
 h1 strong {
-    font-size: 1.08em;
-    color: #fff;
+    font-size: 1.09em;
+    color: #00d9ff;
     /* color: #00d9ff; */
     font-weight: 800;
     white-space: nowrap;
@@ -4131,7 +4131,7 @@ body::before {
 
     .hero-content h1 strong {
         color: #00d9ff;
-        font-size: 3.9rem;
+        /* font-size: 2.9rem; */
     }
 
     .hero-lead {
