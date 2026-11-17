@@ -1904,7 +1904,8 @@ h1 strong {
 
 .robot-earth-art {
     display: block;
-    width: 100%;
+    padding-top: 30px;
+    width: 700%;
     height: 100%;
     object-fit: contain;
     object-position: center;
@@ -3921,3 +3922,9 @@ body::before {
     }
 
 }
+
+
+/* new banner */
+
+
+
