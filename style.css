@@ -3949,299 +3949,128 @@ body::before {
 
 }
 
-
-/* =====================================
-   MOBILE HERO - TEXT OVER BANNER IMAGE
-===================================== */
-
-@media (max-width: 768px) {
-
-    .hero {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 750px;
-        padding: 0 25px 70px;
-        overflow: hidden;
-    }
-
-    /* Robot image background */
-    .hero-visual {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        margin: 0;
-    }
-
-    .robot-art-frame {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
-
-    .robot-earth-art {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-    }
-
-    /* Black shade over image */
-    .hero-visual::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.90) 0%,
-            rgba(0, 0, 0, 0.72) 45%,
-            rgba(0, 0, 0, 0.42) 100%
-        );
-        z-index: 1;
-    }
-
-    /* Hide image caption on mobile */
-    .visual-caption {
-        display: none;
-    }
-
-    /* Text above the image */
-    .hero-content {
-        position: relative;
-        z-index: 3;
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-    }
-
-    .hero-content h1 {
-        font-size: clamp(36px, 9vw, 52px);
-        line-height: 1.08;
-    }
-
-    .hero-lead {
-        font-size: 15px;
-        line-height: 1.7;
-        max-width: 100%;
-    }
-
-    .eyebrow {
-        font-size: 10px;
-    }
-
-    .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-    }
-
-    .hero-trust {
-        margin-top: 30px;
-    }
-
-}
-
-/*  */
-/* MOBILE - TRANSPARENT GLASS TEXT EFFECT */
+/* ======================================
+   MOBILE ROBOT IMAGE - FIXED
+====================================== */
 
 @media (max-width: 768px) {
 
-    /* Full mobile hero section */
-    .hero {
-        position: relative;
-        /* min-height: 100vh; */
-        overflow: hidden;
-        isolation: isolate;
-    }
-
-    /* Full-screen transparent glass overlay */
-    .hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-
-        background: rgba(0, 0, 0, 0.28);
-
-        backdrop-filter: blur(3px);
-        -webkit-backdrop-filter: blur(3px);
-
-        pointer-events: none;
-    }
-
-    /* Robot image */
     .hero-visual {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-    }
+        position: relative !important;
 
-    .robot-art-frame {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        max-width: none;
-    }
-
-    .robot-earth-art {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 58% center;
-    }
-
-    /* Text above transparent overlay */
-    .hero-content {
-        position: relative;
-        z-index: 3;
-
-        width: 100%;
-        /* min-height: 100vh; */
+        order: 2;
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
 
-        padding: 0 22px 50px;
-        margin: 0;
-
-        background: transparent !important;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-    .hero-content h1 {
-        color: #ffffff;
-        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
-        
-    }
-
-    .hero-content h1 strong {
-        color: #00d9ff;
-        /* font-size: 2.9rem; */
-    }
-
-    .hero-lead {
-        color: #ffffff;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-    }
-
-    .visual-caption {
-        display: none;
-    }
-
-}
-
-/* MOBILE - Seamless Hero Transition */
-
-@media (max-width: 768px) {
-
-    .hero {
-        position: relative;
-        overflow: hidden;
-        background: #020609;
-        padding-bottom: 80px;
-    }
-
-    /* Extend banner image */
-    .hero-visual {
-        position: absolute;
-        inset: 0 0 -100px 0;
         width: 100%;
         height: auto;
-        z-index: 0;
+        min-height: auto;
+
+        margin-top: 15px;
+        padding: 0;
+
+        overflow: visible;
     }
+
+    /* IMAGE FRAME */
 
     .robot-art-frame {
-        position: absolute;
-        inset: 0;
+        position: relative !important;
+
         width: 100%;
-        height: 100%;
+        max-width: 500px;
+
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+
+        overflow: visible;
     }
+
+    /* COMPLETE IMAGE - NO CUTTING */
 
     .robot-earth-art {
+        position: relative !important;
+
+        display: block;
+
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+        height: auto;
+
+        max-height: none;
+
+        object-fit: contain;
+        object-position: center top;
+
+        margin: 0;
     }
 
-    /* Smooth bottom blending */
-    .hero::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
 
-        height: 180px;
+    /* ==================================
+       STRONG BLACK BOTTOM GRADIENT
+    ================================== */
+
+    .hero-visual::after {
+        content: "";
+
+        position: absolute;
+
+        left: -20px;
+        right: -20px;
+        bottom: -2px;
+
+        height: 280px;
 
         background: linear-gradient(
             to bottom,
             transparent 0%,
-            rgba(2, 6, 9, 0.65) 45%,
-            #020609 100%
+            rgba(0, 0, 0, 0.15) 10%,
+            rgba(0, 0, 0, 0.45) 30%,
+            rgba(0, 0, 0, 0.75) 55%,
+            rgba(0, 0, 0, 0.94) 80%,
+            #000000 100%
         );
 
-        z-index: 2;
+        z-index: 3;
+
         pointer-events: none;
     }
 
-    .hero-content {
+
+    /* CAPTION */
+
+    .visual-caption {
         position: relative;
-        z-index: 3;
+
+        z-index: 4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        margin-top: 0;
+        padding: 12px 0 25px;
+
+        background: #000000;
     }
 
 }
-.social-links {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
-.social-links a {
-    width: 42px;
-    height: 42px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* SMALL MOBILE */
 
-    font-size: 19px;
-    color: #ffffff;
+@media (max-width: 480px) {
 
-    background: rgba(0, 140, 255, 0.08);
+    .robot-art-frame {
+        width: 100%;
+    }
 
-    border: 1px solid rgba(0, 195, 255, 0.3);
+    .hero-visual::after {
+        height: 220px;
+    }
 
-    border-radius: 50%;
-
-    transition: all 0.35s ease;
-}
-
-.social-links a:hover {
-    color: #ffffff;
-
-    background: linear-gradient(
-        135deg,
-        #006eff,
-        #00d9ff
-    );
-
-    transform: translateY(-5px) scale(1.1);
-
-    box-shadow: 0 0 20px #00bfff80;
 }
