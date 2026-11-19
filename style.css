@@ -4072,5 +4072,75 @@ body::before {
     .hero-visual::after {
         height: 220px;
     }
+}
+/* =====================================
+   GVX TECH - FIXED WHATSAPP BUTTON
+===================================== */
+
+.whatsapp-float {
+    position: fixed !important;
+
+    right: 22px !important;
+    bottom: 22px !important;
+
+    width: 58px !important;
+    height: 58px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #25D366 !important;
+    color: #ffffff !important;
+
+    border-radius: 50% !important;
+
+    font-size: 32px !important;
+    text-decoration: none !important;
+
+    z-index: 2147483647 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+
+    box-shadow: 0 5px 25px rgba(37, 211, 102, 0.4);
+
+    transition: 0.3s ease;
+}
+
+.whatsapp-float i {
+    display: block !important;
+    color: #ffffff !important;
+}
+
+.whatsapp-float:hover {
+    background: #128C7E !important;
+    transform: scale(1.1);
+}
+
+
+/* MOBILE FIX */
+
+@media screen and (max-width: 768px) {
+
+    .whatsapp-float {
+        position: fixed !important;
+
+        right: 15px !important;
+
+        bottom: calc(20px + env(safe-area-inset-bottom)) !important;
+
+        width: 54px !important;
+        height: 54px !important;
+
+        display: flex !important;
+
+        font-size: 29px !important;
+
+        z-index: 2147483647 !important;
+    }
 
 }
+
